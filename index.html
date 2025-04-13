@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Mouse Protection Agency - Most Wanted</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            background-color: #00274c;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 5px solid #a50000;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .logo-circle {
+            width: 80px;
+            height: 80px;
+            background-color: #a50000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .warning-banner {
+            background-color: #a50000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .wanted-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .wanted-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .wanted-number {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #a50000;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .most-wanted {
+            border: 3px solid #a50000;
+            position: relative;
+        }
+        .wanted-photo {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .silhouette {
+            font-size: 120px;
+            color: #999;
+        }
+        .wanted-info h3 {
+            margin-top: 0;
+            color: #00274c;
+        }
+        .wanted-info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .crime {
+            color: #a50000;
+            font-weight: bold;
+        }
+        .reward {
+            background-color: #ffd700;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #00274c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+        .disclaimer {
+            font-style: italic;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        .alias {
+            font-style: italic;
+            color: #a50000;
+        }
+        @media (max-width: 768px) {
+            .wanted-list {
+                grid-template-columns: 1fr;
+            }
+            .logo {
+                flex-direction: column;
+            }
+            .logo-circle {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo-circle">
+                <div style="font-size: 40px;">🐭</div>
+            </div>
+            <div class="logo-text">NATIONAL MOUSE PROTECTION AGENCY</div>
+        </div>
+        <div>MOST WANTED MOUSE MOLESTERS</div>
+    </div>
+    
+    <div class="warning-banner">
+        WARNING: THE INDIVIDUALS LISTED BELOW ARE CONSIDERED EXTREMELY DANGEROUS TO SMALL RODENTS
+    </div>
+    
+    <div class="container">
+        <div class="wanted-list">
+            <div class="wanted-card most-wanted">
+                <div class="wanted-number">1</div>
+                <div class="wanted-photo">
+                    <div class="silhouette">👤</div>
+                </div>
+                <div class="wanted-info">
+                    <h3>MARTIN KRAYNA</h3>
+                    <p class="alias"><strong>Aliases:</strong> "MMM", "Mouse Molester Martin"</p>
+                    <p><strong>Age:</strong> Unknown</p>
+                    <p><strong>Height:</strong> Unknown</p>
+                    <p><strong>Weight:</strong> Unknown</p>
+                    <p><strong>Last Known Location:</strong> Cheese Factory District</p>
+                    <p class="crime">CRIMES: Serial Mouse Molestation, Unauthorized Rodent Fondling, Cheese Baiting</p>
+                    <p><strong>Description:</strong> Approaches mice with suspicious treats and makes inappropriate "squeaky" noises. Known to wear mouse-themed clothing to lure victims.</p>
+                    <div class="reward">REWARD: 50,000 CHEESE WHEELS</div>
+                </div>
+            </div>
+            
+            <div class="wanted-card">
+                <div class="wanted-number">2</div>
+                <div class="wanted-photo">
+                    <div class="silhouette">👤</div>
+                </div>
+                <div class="wanted-info">
+                    <h3>SYLVIA "SQUEAKY" THOMPSON</h3>
+                    <p><strong>Age:</strong> 42</p>
+                    <p><strong>Height:</strong> 5'4"</p>
+                    <p><strong>Last Known Location:</strong> Pet Store Vicinity</p>
+                    <p class="crime">CRIMES: Mouse Tail Pulling, Unauthorized Fur Stroking</p>
+                    <p><strong>Description:</strong> Poses as pet store employee. Uses tiny combs and suspicious "massage techniques" on unsuspecting mice.</p>
+                    <div class="reward">REWARD: 25,000 CHEESE WHEELS</div>
+                </div>
+            </div>
+            
+            <div class="wanted-card">
+                <div class="wanted-number">3</div>
+                <div class="wanted-photo">
+                    <div class="silhouette">👤</div>
+                </div>
+                <div class="wanted-info">
+                    <h3>RICHARD "TINY HANDS" DAVIS</h3>
+                    <p><strong>Age:</strong> 29</p>
+                    <p><strong>Height:</strong> 6'2"</p>
+                    <p><strong>Last Known Location:</strong> Laboratory District</p>
+                    <p class="crime">CRIMES: Non-consensual Mouse Cuddling, Excessive Whisker Touching</p>
+                    <p><strong>Description:</strong> Former science researcher with abnormally small hands. Claims to conduct "legitimate research" while suspiciously wearing mouse ears.</p>
+                    <div class="reward">REWARD: 20,000 CHEESE WHEELS</div>
+                </div>
+            </div>
+            
+            <div class="wanted-card">
+                <div class="wanted-number">4</div>
+                <div class="wanted-photo">
+                    <div class="silhouette">👤</div>
+                </div>
+                <div class="wanted-info">
+                    <h3>ELEANOR WHISKERTON</h3>
+                    <p><strong>Age:</strong> 55</p>
+                    <p><strong>Height:</strong> 5'7"</p>
+                    <p><strong>Last Known Location:</strong> Suburban Garden Sheds</p>
+                    <p class="crime">CRIMES: Inappropriate Mouse Serenading, Unauthorized Mouse Photography</p>
+                    <p><strong>Description:</strong> Lures mice with tiny musical instruments and costumes. Has extensive collection of mouse portraits in compromising positions.</p>
+                    <div class="reward">REWARD: 15,000 CHEESE WHEELS</div>
+                </div>
+            </div>
+            
+            <div class="wanted-card">
+                <div class="wanted-number">5</div>
+                <div class="wanted-photo">
+                    <div class="silhouette">👤</div>
+                </div>
+                <div class="wanted-info">
+                    <h3>GERALD "SQUEEZEY" MCGEE</h3>
+                    <p><strong>Age:</strong> 33</p>
+                    <p><strong>Height:</strong> 5'10"</p>
+                    <p><strong>Last Known Location:</strong> Public Park Benches</p>
+                    <p class="crime">CRIMES: Mouse Squeezing, Unwanted Mouse Transport in Pockets</p>
+                    <p><strong>Description:</strong> Often seen feeding birds while secretly targeting mice. Known for special modified pockets with suspiciously soft linings.</p>
+                    <div class="reward">REWARD: 10,000 CHEESE WHEELS</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="warning-banner" style="margin-top: 30px;">
+            IF YOU HAVE INFORMATION, CONTACT THE NMPA HOTLINE: 1-800-MOUSE-SOS
+        </div>
+        
+        <div class="disclaimer">
+            The National Mouse Protection Agency operates under the jurisdiction of the Department of Small Animal Affairs. All suspected mouse molesters are innocent until proven guilty in a court of rodent law. Exercise caution when approaching these individuals - they may be armed with tiny treats and miniature brushes.
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>NATIONAL MOUSE PROTECTION AGENCY - PROTECTING AMERICA'S MICE SINCE 1974</p>
+        <p class="disclaimer">This is a satirical website. No actual mice were harmed in its creation. For real animal protection concerns, please contact your local animal welfare organization.</p>
+    </div>
+</body>
+</html>
